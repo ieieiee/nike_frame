@@ -3,13 +3,15 @@
       padding: 0;
       list-style: none;
   }
-
+body{
+    width: 1280px;
+    margin: auto;
+}
   .main-content {
       display: flex;
       position: relative;
       flex-direction: column;
-      width: 1280px;
-      margin: auto;
+      
 
   }
 
@@ -39,17 +41,28 @@
       font-size: 42pt;
   }
 
-  .main-content .txt-card1 .select-btn {
+  .main-content .txt-card1 .select-btn{
       padding: 0.5em;
       background-color: #111;
       color: #fff;
       border-radius: 200px;
       width: 50px;
       margin: 20px auto;
-      ;
+     
+  }
+  
+  .txt .select-btn {
+      padding: 0.5em;
+      background-color: #111;
+      color: #fff;
+      border-radius: 200px;
+      width: 50px;
+      align-items: center;
   }
 
-  .main-content .txt-card1 .select-btn:hover {
+  .main-content .txt-card1 .select-btn:hover ,
+  .txt .select-btnn:hover
+  {
       background-color: #757575;
   }
 
@@ -104,32 +117,35 @@
   .main-content .photo-card1 .photo-card1-txt .next-btn svg {}
 
   .main-footer {
-      width: 1280px;
       align-items: center;
       margin: auto;
       vertical-align: bottom;
   }
 
   .main-footer .container {
-      width: 500px;
-      height: 120px;
       display: flex;
       margin: auto;
-      padding: 0px 100px;
       overflow: hidden;
       position: relative;
+      box-sizing: border-box;
+      
+      
   }
 
   .main-footer .container:hover {
-      overflow: visible;
+
   }
 
   .footer-item {
-      width: 200px;
-      flex-grow: 1;
-      margin: 0 5px;
-
+      margin: 0 auto;
+      overflow: hidden;
+      box-sizing:content-box;
+      
   }
+  .footer-item :hover {
+     
+}
+
 
   .footer-item h4 {
       font-size: 16px;
@@ -141,7 +157,6 @@
   .footer-item nav {
       display: flex;
       flex-direction: column;
-
   }
 
   .footer-item nav a {
@@ -151,11 +166,10 @@
       text-decoration: none;
       padding: 3px 0;
   }
-
-  .footer-item .list li {
-      color: #ccc;
-      line-height: 1.2;
-      font-size: 12px;
-      text-decoration: none;
-      padding: 3px 0;
-  }
+  .list li{
+    color: #ccc;
+    line-height: 1.2;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 3px 0;
+}
