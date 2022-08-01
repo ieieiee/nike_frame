@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike 官網</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    body {
+        width: 1280px;
+    }
+
+    .main-foot {
+        display: flex;
+        margin: 0 auto;
+        padding: 0 20px;
+
+    }
+
+    .merchMenuWrapper {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 1fr repeat(3, 48px 1fr);
+        grid-template-rows: auto 1fr;
+        height: 130px;
+        overflow: hidden;
+    }
+
+    .merchMenuWrapper:hover {
+        height: 230px;
+        transition:.7s;
+
+    }
+
+
+    .merchMenuWrapper h4 {
+        margin-bottom: 16px;
+        font-weight: 500;
+
+    }
+
+    .merchMenuWrapper h4:nth-child(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .merchMenuWrapper>div:nth-child(2) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .merchMenuWrapper h4:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .merchMenuWrapper>div:nth-child(4) {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    .merchMenuWrapper h4:nth-child(5) {
+        grid-column: 5;
+        grid-row: 1;
+    }
+
+    .merchMenuWrapper>div:nth-child(6) {
+        grid-column: 5;
+        grid-row: 2;
+    }
+
+    .merchMenuWrapper h4:nth-child(7) {
+        grid-column: 7;
+        grid-row: 1;
+    }
+
+    .merchMenuWrapper>div:nth-child(8) {
+        grid-column: 7;
+        grid-row: 2;
+    }
+
+    .merchMenuWrapper>div {
+        max-height: inherit !important;
+        line-height: 24px;
+    }
+    .list {}
+
+    a {
+        text-decoration: none;
+    }
+    .main-container{
+        display: flex;
+        margin: auto;
+        justify-items: center;
+        text-align: center;
+        
+    }
+    .main-container div{
+        position: relative;
+        
+        width: 100%;
+    }
+    .txt-card1{
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+  
+    .txt-card1 p{
+        margin-top: 5px;
+    }
+    .txt-card1 h1{
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+    .txt-card1 span{
+    
+    }
+    .txt-card1 div{
+    
+    }
+    .txt-card1 .select-btn{
+        padding: 6px 20px;
+    border-radius: 50px;
+    border: 1.5px solid transparent;
+    width: 32px;
+    margin: 1em auto;
+    background: #111;
+    color: #fff;
+    
+    }
+   
+    .photo-card1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .photo-card1 .photo-card1-txt{
+        display: flex;
+        margin: 20px;
+    }
+    .photo-card1-txt h2{}
+    .photo-card1-txt button{
+      position: absolute;
+      border: none;
+      background-color: rgba(204, 204, 204, 0.836);
+      color: #fff;
+      border-radius: 200px;
+      width: 50px;
+      height: 50px;
+      right:0;
+      transition: background-color 250ms cubic-bezier(.25,.1,.25,1);
+    }
+    
+    .photo-card1-txt button:hover,
+    .txt-card1 .select-btn:hover{
+    background-color: #cccccc;
+} 
+    .photo-card1-txt .prev-btn{
+        right: 60px;
+    }
+    .photo-card1-txt .next-btn{
+       
+    }
+    .photo-card1 .photo-3{
+        display: flex;
+        width: inherit;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; 
+    }
+    .photo-3 a{
+        
+    }
+    .photo-3 .pic-1{
+        display: flex;
+        flex-direction: column;  
+    }
+    .pic-1 img{
+     
+        width: 410px;
+        height: 450px;
+        margin: 10px;      
+        
+    }
+    .pic-1 .txt{
+        width: auto;
+        text-align: left;
+        margin: 10px;
+    }
+    .txt div{}
+    .txt h5{
+        font-size: 18px;
+    }
+    .txt p{}
+    .txt .select-btn{
+        
+    }
+    
+</style>
+
+<body>
+    <div class="main-header">
+
+    </div>
+    <div class="main-container">
+        <div>
+            <div class="txt-card1">
+                <p>腳踏實地</p>
+                <h1>Nike React Pegasus Trail 4</h1>
+                <span>深受越野跑者所信賴，帶你穿梭道路和越野小徑。</span>
+                <div class="select-btn">選購</div>
+            </div>
+            <div class="photo-card1">
+                <div class="photo-card1-txt">
+                    <h2>Nike 跑鞋</h2>
+                    <button class="prev-btn">
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px"
+                            height="24px" fill="none">
+                            <path stroke="currentColor" stroke-width="1.5" d="M15.525 18.966L8.558 12l6.967-6.967">
+                            </path>
+                        </svg>
+                    </button>
+                    <button class="next-btn">
+                        <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" role="img" width="24px"
+                            height="24px" fill="none">
+                            <path stroke="currentColor" stroke-width="1.5" d="M8.474 18.966L15.44 12 8.474 5.033">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="photo-3">
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="https://picsum.photos/500/600?random=1">
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <h5>誰說你不能樣樣都有？</h5>
+                                    <p>這雙鞋透氣輕量、舒適支撐，提供柔軟靈敏回彈感受，專為暢跑設計。全方位功能一應俱全。</p>
+                                    <div class="select-btn">選購</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="https://picsum.photos/500/600?random=2">
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <h5>造型出色、自在暢跑、感覺美好</h5>
+                                    <p>Nike React Infinity Run Flyknit 3 提供高度舒適，讓你順暢馳騁，是你邁向優質跑步體驗的第一步。</p>
+                                    <div class="select-btn">選購</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="https://picsum.photos/500/600?random=3">
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <h5>穿上 PEG 凝聚信心</h5>
+                                    <p>傳奇跑鞋強勢回歸，機能著感更勝以往。</p>
+                                    <div class="select-btn">選購</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="https://picsum.photos/500/600?random=4">
+                            </div>
+                            <div class="txt">
+                                <div>
+                                    <h5>緩震運動鞋</h5>
+                                    <p>Nike Air Zoom Vomero 16 採用專為長跑設計的高級緩震系統，提供舒適的跑步體驗。在你以為快撐不下去的時候，這款靈敏跑鞋就是能讓你跑得更遠。
+                                    </p>
+                                    <div class="select-btn">選購</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-foot">
+        <div class="merchMenuWrapper">
+            <h4 class="body-2">經典款</h4>
+            <div>
+                <ul class="list">
+                    <li><a href="https://www.nike.com/tw/w/air-force-1-shoes-5sj3yzy7ok" class="body-2">Air Force 1</a>
+                    </li>
+                    <li><a href="https://www.nike.com/tw/w/huarache-shoes-adlt2zy7ok" class="body-2">Huarache</a></li>
+                    <li><a href="https://www.nike.com/tw/w/air-max-90-shoes-auqmozy7ok" class="body-2">Air Max 90</a>
+                    </li>
+                    <li><a href="https://www.nike.com/tw/w/air-max-95-shoes-b0mibzy7ok" class="body-2">Air Max 95</a>
+                    </li>
+                    <div class="list-sub">
+                        <li><a href="https://www.nike.com/tw/w/air-max-97-shoes-77f38zy7ok" class="body-2">Air Max
+                                97</a></li>
+                        <li><a href="https://www.nike.com/tw/w/air-max-270-shoes-5ix6dzy7ok" class="body-2">Air Max
+                                270</a></li>
+                        <li><a href="https://www.nike.com/tw/w/air-max-720-shoes-2qk36zy7ok" class="body-2">Air Max
+                                720</a></li>
+                        <li><a href="https://www.nike.com/tw/w/air-max-shoes-a6d8hzy7ok" class="body-2">所有 Air Max</a>
+                        </li>
+                        <li><a href="https://www.nike.com/tw/w/vapormax-shoes-220dzy7ok" class="body-2">Vapormax</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <h4 class="body-2">鞋款</h4>
+            <div>
+                <ul class="list">
+                    <li><a href="https://www.nike.com/tw/w/shoes-y7ok" class="body-2">所有鞋款</a></li>
+                    <li><a href="https://www.nike.com/tw/w/nike-by-you-shoes-6ealhzy7ok" class="body-2">專屬訂製鞋款</a></li>
+                    <li><a href="https://www.nike.com/tw/w/jordan-shoes-37eefzy7ok" class="body-2">Jordan 鞋款</a></li>
+                    <li><a href="https://www.nike.com/tw/w/running-shoes-37v7jzy7ok" class="body-2">跑鞋</a></li>
+                    <div class="list-sub">
+                        <li><a href="https://www.nike.com/tw/w/basketball-shoes-3glsmzy7ok" class="body-2">籃球鞋款</a></li>
+                        <li><a href="https://www.nike.com/tw/w/soccer-shoes-1gdj0zy7ok" class="body-2">足球鞋款</a></li>
+                        <li><a href="https://www.nike.com/tw/w/training-gym-shoes-58jtozy7ok" class="body-2">健身與訓練鞋款</a>
+                        </li>
+                        <li><a href="https://www.nike.com/tw/w/lifestyle-shoes-13jrmzy7ok" class="body-2">運動生活鞋款</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <h4 class="body-2">服裝</h4>
+            <div>
+                <ul class="list">
+                    <li><a href="https://www.nike.com/tw/w/apparel-6ymx6" class="body-2">所有服裝</a></li>
+                    <li><a href="https://www.nike.com/tw/w/modest-wear-22fj5" class="body-2">合宜穿著</a></li>
+                    <li><a href="https://www.nike.com/tw/w/hoodies-pullovers-6rive" class="body-2">連帽上衣與套頭上衣</a></li>
+                    <li><a href="https://www.nike.com/tw/w/tops-t-shirts-9om13" class="body-2">T 恤與上衣</a></li>
+                    <div class="list-sub">
+                        <li><a href="https://www.nike.com/tw/w/jackets-vests-50r7y" class="body-2">外套</a></li>
+                        <li><a href="https://www.nike.com/tw/w/baselayer-nike-pro-4fc7d" class="body-2">緊身與 Nike Pro</a>
+                        </li>
+                        <li><a href="https://www.nike.com/tw/w/pants-tights-2kq19" class="body-2">長褲與內搭褲</a></li>
+                        <li><a href="https://www.nike.com/tw/w/shorts-38fph" class="body-2">短褲</a></li>
+                    </div>
+                </ul>
+            </div>
+            <h4 class="body-2">兒童款</h4>
+            <div>
+                <ul class="list">
+                    <li><a href="https://www.nike.com/tw/w/baby-toddler-kids-shoes-2j488zv4dhzy7ok"
+                            class="body-2">嬰幼兒鞋款</a></li>
+                    <li><a href="https://www.nike.com/tw/w/kids-shoes-v4dhzy7ok" class="body-2">兒童鞋款</a></li>
+                    <li><a href="https://www.nike.com/tw/w/kids-jordan-shoes-37eefzv4dhzy7ok" class="body-2">兒童 Jordan
+                            鞋款</a></li>
+                    <li><a href="https://www.nike.com/tw/w/kids-basketball-shoes-3glsmzv4dhzy7ok"
+                            class="body-2">兒童籃球鞋</a></li>
+                    <div class="list-sub">
+                        <li><a href="https://www.nike.com/tw/w/kids-running-shoes-37v7jzv4dhzy7ok"
+                                class="body-2">兒童跑鞋</a></li>
+                        <li><a href="https://www.nike.com/tw/w/kids-apparel-6ymx6zv4dh" class="body-2">兒童服裝</a></li>
+                        <li><a href="https://www.nike.com/tw/w/kids-backpack-99ww0zv4dh" class="body-2">兒童背包</a></li>
+                        <li><a href="https://www.nike.com/tw/w/kids-socks-7ny3qzv4dh" class="body-2">兒童襪子</a></li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="foot-copyright">
+
+    </div>
+</body>
+
+</html>
