@@ -16,11 +16,12 @@
 
     body {
         width: 1280px;
+        margin: auto;
     }
 
     .main-foot {
         display: flex;
-        margin: 0 auto;
+        margin: 30px auto;
         padding: 0 20px;
 
     }
@@ -36,7 +37,7 @@
 
     .merchMenuWrapper:hover {
         height: 230px;
-        transition:.7s;
+        transition: .7s;
 
     }
 
@@ -91,121 +92,282 @@
         max-height: inherit !important;
         line-height: 24px;
     }
+
     .list {}
 
     a {
         text-decoration: none;
     }
-    .main-container{
+
+    .main-container {
         display: flex;
+
         margin: auto;
         justify-items: center;
         text-align: center;
-        
+
     }
-    .main-container div{
-        position: relative;
-        
+
+    .main-container div {
         width: 100%;
     }
-    .txt-card1{
-    top: 0;
-    left: 0;
-    background-color: transparent;
-    margin-bottom: 20px;
-}
 
-  
-    .txt-card1 p{
+    .txt-card1 {
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        margin-bottom: 20px;
+    }
+
+
+    .txt-card1 p {
         margin-top: 5px;
     }
-    .txt-card1 h1{
+
+    .txt-card1 h1 {
         margin-top: 5px;
         margin-bottom: 10px;
     }
-    .txt-card1 span{
-    
-    }
-    .txt-card1 div{
-    
-    }
-    .txt-card1 .select-btn{
+
+    .txt-card1 span {}
+
+    .txt-card1 div {}
+
+    .txt-card1 .select-btn {
         padding: 6px 20px;
-    border-radius: 50px;
-    border: 1.5px solid transparent;
-    width: 32px;
-    margin: 1em auto;
-    background: #111;
-    color: #fff;
-    
+        border-radius: 50px;
+        border: 1.5px solid transparent;
+        width: 32px;
+        margin: 1em auto;
+        background: #111;
+        color: #fff;
+
     }
-   
-    .photo-card1{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+
+    .main-container .photo-card1 {}
+
+    .photo-card1 .photo-card1-txt {
+        position: relative;
+        text-align: left;
+        margin: 20px auto 5px auto;
     }
-    .photo-card1 .photo-card1-txt{
-        display: flex;
-        margin: 20px;
+
+    .photo-card1-txt h2 {
+        padding: 10px;
     }
-    .photo-card1-txt h2{}
-    .photo-card1-txt button{
-      position: absolute;
-      border: none;
-      background-color: rgba(204, 204, 204, 0.836);
-      color: #fff;
-      border-radius: 200px;
-      width: 50px;
-      height: 50px;
-      right:0;
-      transition: background-color 250ms cubic-bezier(.25,.1,.25,1);
+
+    .photo-card1-txt button {
+        position: absolute;
+        border: none;
+        background-color: rgba(204, 204, 204, 0.836);
+        color: #000;
+        border-radius: 200px;
+        width: 38px;
+        height: 38px;
+        margin: 10px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        transition: background-color 250ms cubic-bezier(.25, .1, .25, 1);
     }
-    
+
+
     .photo-card1-txt button:hover,
-    .txt-card1 .select-btn:hover{
-    background-color: #cccccc;
-} 
-    .photo-card1-txt .prev-btn{
+    .txt-card1 .select-btn:hover,
+    .photo-4 .pic-1 .txt:hover,
+    .pic .select-btn-right:hover,
+    .pic .select-btn-left:hover,
+    .photo-fashion .select-btn:hover {
+        background-color: #cccccc;
+    }
+
+    .photo-card1-txt .prev-btn {
+        position: absolute;
         right: 60px;
     }
-    .photo-card1-txt .next-btn{
-       
+
+    .photo-card1-txt .next-btn {
+        position: absolute;
     }
-    .photo-card1 .photo-3{
+
+    .photo-card1 .photo-3 {
         display: flex;
-        width: inherit;
+        width: 100%;
         overflow-x: auto;
-        scroll-snap-type: x mandatory; 
+        scroll-snap-type: x mandatory;
     }
-    .photo-3 a{
-        
-    }
-    .photo-3 .pic-1{
-        display: flex;
-        flex-direction: column;  
-    }
-    .pic-1 img{
-     
+
+    .photo-3 a {}
+
+    .photo-3 .pic-1 {}
+
+    .pic-1 img {
         width: 410px;
         height: 450px;
-        margin: 10px;      
-        
+        margin: 10px;
     }
-    .pic-1 .txt{
+
+    .photo-3 .pic-1 .txt {
         width: auto;
         text-align: left;
         margin: 10px;
     }
-    .txt div{}
-    .txt h5{
+
+    .photo-3 .txt div {}
+
+    .photo-3 .txt h5 {
         font-size: 18px;
     }
-    .txt p{}
-    .txt .select-btn{
+
+    .photo-3 .txt p {}
+
+    .photo-3 .txt .select-btn {}
+
+    .photo-card1 .photo-4 {
+        display: flex;
+        margin: 10px auto;
+    }
+
+    .photo-4 .pic {
+        position: relative;
+        vertical-align: baseline;
+    }
+
+    .photo-4 .pic-1 .txt {
+        width: auto;
+        position: absolute;
+        text-align: left;
+        padding: 6px 20px;
+        color: #111;
+        bottom: 40px;
+        left: 40px;
+        z-index: 1;
+        background-color: #fff;
+        border-radius: 200px;
+        border: 1.5px solid transparent;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo-card1 .photo-new {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .photo-new .pic {
+        position: relative;
+        padding: 5px;
+        margin: auto;
+    }
+
+    .pic .select-btn-left {
+        width: auto;
+        position: absolute;
+        text-align: left;
+        padding: 6px 15px;
+        color: #111;
+        bottom: 60px;
+        left: 50px;
+        z-index: 1;
+        background-color: #fff;
+        border-radius: 200px;
+        border: 1.5px solid transparent;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+    }
+
+    .pic .select-btn-right {
+        width: auto;
+        position: absolute;
+        text-align: left;
+        padding: 6px 15px;
+        color: #fff;
+        bottom: 60px;
+        left: 50px;
+        z-index: 1;
+        background-color: #111;
+        border-radius: 200px;
+        border: 1.5px solid transparent;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+    }
+
+    .photo-new img {
+        width: 610px;
+        height: 700px;
+    }
+
+    .photo-new p {
+        width: auto;
+        position: absolute;
+        text-align: left;
+        bottom: 110px;
+        left: 50px;
+        font-weight: 700;
+        color: #fff;
+
+    }
+
+
+    .photo-fashion .pic {
+        position: relative;
+        padding: 5px;        
+        overflow: hidden;
+    }
+    .photo-fashion img {
+        width: 100%;
+        height: 100%;
+        margin-top: -610px;
+    }
+    .photo-fashion p {
+        width: auto;
+        position: absolute;
+        text-align: left;
+        bottom: 110px;
+        left: 50px;
+        font-weight: 900;
+        font-size: 24pt;
+        color: #111;
+
+    }
+
+    .photo-fashion .select-btn {
+        width: auto;
+        position: absolute;
+        text-align: left;
+        padding: 6px 15px;
+        color: #fff;
+        bottom: 60px;
+        left: 50px;
+        z-index: 1;
+        background-color: #111;
+        border-radius: 200px;
+        border: 1.5px solid transparent;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+
+    }
+    .photo-point{
         
     }
-    
+    .photo-point .pic img{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+    }
+    .photo-top{
+
+    }
+    .photo-top .pic img{
+        width: inherit;
+        height: 100%;
+        margin: 0;
+    }
+
 </style>
 
 <body>
@@ -214,11 +376,25 @@
     </div>
     <div class="main-container">
         <div>
-            <div class="txt-card1">
-                <p>腳踏實地</p>
-                <h1>Nike React Pegasus Trail 4</h1>
-                <span>深受越野跑者所信賴，帶你穿梭道路和越野小徑。</span>
-                <div class="select-btn">選購</div>
+            <div class="photo-card1">
+                <div class="photo-top">
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="pic/79c08897-cec4-4938-8536-6cefc371b883.webp">
+                                <div class="txt-card1">
+                                    <h1>獎勵日即將登場</h1>
+                                    <p>和我們一同慶祝 Nike 應用程式週年，會員可享更多獎勵。
+                                    <br>8 月 2 日至 8 月 7 日，透過 Nike 應用程式購物，就有機會贏得一雙 Nike Dunk 低筒鞋 “Panda”。
+                                    <br>不是 Nike 會員嗎？記得註冊加入，以免錯過優惠。
+                                    </p>
+                                    <div class="select-btn">加入</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
             </div>
             <div class="photo-card1">
                 <div class="photo-card1-txt">
@@ -297,6 +473,113 @@
                                     <div class="select-btn">選購</div>
                                 </div>
                             </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="photo-card1">
+                <div class="photo-card1-txt">
+                    <h2>新品上市</h2>
+                </div>
+                <div class="photo-new">
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="https://picsum.photos/500/600?random=10">
+                                <div class="txt">
+                                    <p>Nike Alate 運動內衣：每天由你做主</p>
+                                    <div class="select-btn-left">選購</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="https://picsum.photos/500/600?random=20">
+                                <div class="txt">
+                                    <p>Nike Air Max Flyknit Racer</p>
+                                    <div class="select-btn-right">選購</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="photo-card1">
+                <div class="photo-card1-txt">
+                    <h2>精選</h2>
+                </div>
+                <div class="photo-point">
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="pic/8fe7da69-7491-4cdd-8c09-2c6b7e253e66.webp">
+                                <div class="txt-card1">
+                                    <p>團結一致，攜手向前邁進</p>
+                                    <h1>LIVERPOOL FC 2022/23 客場運動服飾</h1>
+                                    <div class="select-btn">選購</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="photo-card1">
+                <div class="photo-card1-txt">
+                    <h2>流行趨勢</h2>
+                </div>
+                <div class="photo-fashion">
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="pic/79357b2f-6904-4f96-b214-de3e8f44c6f0.webp">
+                                <div class="txt">
+                                    <p>當季最新款式</p>
+                                    <div class="select-btn">選購</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="photo-card1">
+                <div class="photo-card1-txt">
+                    <h2>更多Nike產品</h2>
+                </div>
+                <div class="photo-4">
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="https://picsum.photos/500/600?random=4">
+                                <div class="txt">
+                                    <div class="option-btn">男款</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="https://picsum.photos/500/600?random=5">
+                                <div class="txt">
+                                    <div class="option-btn">女款</div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="pic-1">
+                            <div class="pic">
+                                <img src="https://picsum.photos/500/600?random=6">
+                                <div class="txt">
+                                    <div class="option-btn">兒童款</div>
+                                </div>
+                            </div>
+
                         </div>
                     </a>
                 </div>
