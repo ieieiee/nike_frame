@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    max-width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+    font-size: inherit;
+line-height: inherit;
+font-family: "Helvetica Neue",Helvetica,Arial,PingFang,"Microsoft YaHei",SimHei,sans-serif;
+color: #111;
+background-color: #fff;
+}
+
+.main-foot {
+    display: flex;
+    margin: 30px auto;
+    padding: 0 20px;
+
+}
+
+.merchMenuWrapper {
+    display: grid;
+    margin: auto;
+    grid-template-columns: 1fr repeat(3, 48px 1fr);
+    grid-template-rows: auto 1fr;
+    height: 130px;
+    overflow: hidden;
+}
+
+.merchMenuWrapper:hover {
+    height: 230px;
+    transition: .7s;
+
+}
+
+
+.merchMenuWrapper h4 {
+    margin-bottom: 16px;
+    font-weight: 500;
+
+}
+
+.merchMenuWrapper h4:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.merchMenuWrapper>div:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.merchMenuWrapper h4:nth-child(3) {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.merchMenuWrapper>div:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.merchMenuWrapper h4:nth-child(5) {
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.merchMenuWrapper>div:nth-child(6) {
+    grid-column: 5;
+    grid-row: 2;
+}
+
+.merchMenuWrapper h4:nth-child(7) {
+    grid-column: 7;
+    grid-row: 1;
+}
+
+.merchMenuWrapper>div:nth-child(8) {
+    grid-column: 7;
+    grid-row: 2;
+}
+
+.merchMenuWrapper>div {
+    max-height: inherit !important;
+    line-height: 24px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main-container {
+    display: flex;
+    /* width: 100%; */
+    margin: auto;
+    justify-items: center;
+    text-align: center;
+
+}
+
+.main-container div {
+    width: 100%;
+}
+
+.txt-card1 {
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+
+
+.txt-card1 p {
+    margin-top: 5px;
+}
+
+.txt-card1 h1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.txt-card1 span {}
+
+.txt-card1 div {}
+
+.txt-card1 .select-btn {
+    padding: 6px 20px;
+    border-radius: 50px;
+    border: 1.5px solid transparent;
+    width: 32px;
+    margin: 1em auto;
+    background: #111;
+    color: #fff;
+
+}
+
+.photo-card1 {
+
+}
+
+.photo-card1 .photo-card1-txt {
+    position: relative;
+    text-align: left;
+    margin: 20px auto 5px auto;
+}
+
+.photo-card1-txt h2 {
+    padding: 10px;
+}
+
+.photo-card1-txt button {
+    position: absolute;
+    border: none;
+    background-color: rgba(204, 204, 204, 0.836);
+    color: #000;
+    border-radius: 200px;
+    width: 38px;
+    height: 38px;
+    margin: 10px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transition: background-color 250ms cubic-bezier(.25, .1, .25, 1);
+}
+
+
+.photo-card1-txt button:hover,
+.txt-card1 .select-btn:hover,
+.photo-4 .pic-1 .txt:hover,
+.pic .select-btn-right:hover,
+.pic .select-btn-left:hover,
+.photo-fashion .select-btn:hover {
+    background-color: #cccccc;
+}
+
+.photo-card1-txt .prev-btn {
+    position: absolute;
+    right: 60px;
+}
+
+.photo-card1-txt .next-btn {
+    position: absolute;
+}
+
+.photo-card1 .photo-3 {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.photo-3 a {}
+
+.photo-3 .pic-1 {}
+
+.pic-1 img {
+    background-size: cover;
+    width: 410px;
+    height: 450px;
+    margin: 10px;
+}
+
+.photo-3 .pic-1 .txt {
+    width: auto;
+    text-align: left;
+    margin: 10px;
+}
+
+.photo-3 .txt div {}
+
+.photo-3 .txt h5 {
+    font-size: 18px;
+}
+
+.photo-3 .txt p {}
+
+.photo-3 .txt .select-btn {}
+
+.photo-card1 .photo-4 {
+    display: flex;
+    margin: 10px auto;
+}
+
+.photo-4 .pic {
+    position: relative;
+    vertical-align: baseline;
+}
+
+.photo-4 .pic-1 .txt {
+    width: auto;
+    position: absolute;
+    text-align: left;
+    padding: 6px 20px;
+    color: #111;
+    bottom: 40px;
+    left: 40px;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 200px;
+    border: 1.5px solid transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-card1 .photo-new {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.photo-new .pic {
+    position: relative;
+    padding: 5px;
+    margin: auto;
+}
+
+.pic .select-btn-left {
+    width: auto;
+    position: absolute;
+    text-align: left;
+    padding: 6px 15px;
+    color: #111;
+    bottom: 60px;
+    left: 50px;
+    z-index: 1;
+    background-color: #fff;
+    border-radius: 200px;
+    border: 1.5px solid transparent;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.pic .select-btn-right {
+    width: auto;
+    position: absolute;
+    text-align: left;
+    padding: 6px 15px;
+    color: #fff;
+    bottom: 60px;
+    left: 50px;
+    z-index: 1;
+    background-color: #111;
+    border-radius: 200px;
+    border: 1.5px solid transparent;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.photo-new img {
+    width: 610px;
+    height: 700px;
+}
+
+.photo-new p {
+    width: auto;
+    position: absolute;
+    text-align: left;
+    bottom: 110px;
+    left: 50px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+
+.photo-fashion .pic {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo-fashion img {
+    width: 100%;
+    height: 100%;
+    margin-top: -610px;
+}
+
+.photo-fashion p {
+    width: auto;
+    position: absolute;
+    text-align: left;
+    bottom: 110px;
+    left: 50px;
+    font-weight: 900;
+    font-size: 24pt;
+    color: #111;
+
+}
+
+.photo-fashion .select-btn {
+    width: auto;
+    position: absolute;
+    text-align: left;
+    padding: 6px 15px;
+    color: #fff;
+    bottom: 60px;
+    left: 50px;
+    z-index: 1;
+    background-color: #111;
+    border-radius: 200px;
+    border: 1.5px solid transparent;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+
+}
+
+.photo-point {}
+
+.photo-point .pic img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.photo-top {}
+
+.photo-top .pic img {
+    width: inherit;
+    height: 100%;
+    margin: 0;
+}
+/* -------------------------------------- */
+.foot-wrapper{
+    background-color: #000;
+    margin: 0px;
+    left: 0;
+    min-height: 200px;
+}
+.ncss-container{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    
+}
+.l-footer-body{
+    display: flex;
+    margin-bottom: 16px;
+    
+}
+.hf-accordion-group{
+    display: flex;
+    vertical-align: baseline;
+}
+.l-footer-body .ncss-col-sm-12{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    font-size: 14px;
+    line-height: 1.7;
+    width: 75%;
+}
+.hf-accordion{
+    width: 25%;
+    
+}
+
+.hf-accordion-body{
+    font-weight: 400;
+    letter-spacing: .5px;
+}
+
+
+.l-social-menu{
+    position: relative;
+    width: 25%;
+}
+.social-links{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.d-sm-ib{
+    margin: 14px;
+    right: 0;
+}
+.social-link-icon{
+    fill: #7e7e7e;
+    transition: fill .2s;
+}
+.hf-accordion .footer-link>a{
+    color: #7e7e7e;
+}
+.footer-accordion[data-index="0"] a
+{
+    color: #fff;
+}
+
+.hf-accordion .footer-link-header,
+.hf-accordion .footer-link-header>a,
+.hf-accordion .footer-link-header>button,
+.footer-link:focus,
+.footer-link:hover,
+.footer-link>a:focus,
+.footer-link>a:hover{
+    color: #fff;
+    
+}
+
+.footer-link{
+    line-height: 2.3;
+}
+
+.l-sub-footer{
+    display: flex;
+    background-color: antiquewhite;
+}
+
+.l-sub-footer .ncss-col-sm-12{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 14px;
+    line-height: 1.7;
+    width: 50%;
+}
+.d-md-flx{
+    display: flex;
+}
+.sub-footer-menu{
+    display: flex;
+    position: absolute;
+    right: 0;
+    text-align: right;
+}
+.ml3-md{
+    font-size: 10px;
+    line-height: 2.8;
+    margin-left: 20px;
+
+   
+}
+.ml3-md a{
+    color: #7e7e7e;
+}
+.foot-wrapper button{
+    font-family: inherit;
+}
+button{
+    border:0;
+    background-color:none;
+    outline:none;
+}
