@@ -89,6 +89,13 @@ background-color: #fff;
     line-height: 24px;
 }
 
+.main-foot .merchMenuWrapper >div li a {
+    color: #757575;
+    display: block;
+    font-family: inherit;
+    font-size: inherit;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -391,7 +398,7 @@ a {
 .l-footer-body .ncss-col-sm-12{
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    padding: 40px 40px 0px 40px;
     font-size: 14px;
     line-height: 1.7;
     width: 75%;
@@ -425,7 +432,11 @@ a {
     fill: #7e7e7e;
     transition: fill .2s;
 }
-.hf-accordion .footer-link>a{
+.social-link-icon:hover {
+    fill: #fff;
+}
+.hf-accordion .footer-link>a,
+.footer-link{
     color: #7e7e7e;
 }
 .footer-accordion[data-index="0"] a
@@ -450,7 +461,6 @@ a {
 
 .l-sub-footer{
     display: flex;
-    background-color: antiquewhite;
 }
 
 .l-sub-footer .ncss-col-sm-12{
@@ -463,17 +473,22 @@ a {
 }
 .d-md-flx{
     display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .sub-footer-menu{
     display: flex;
-    position: absolute;
+   /*  position: absolute; 
     right: 0;
-    text-align: right;
+    top: 0;*/
+    width: 100%;
+    align-items: baseline;
+    justify-content: flex-end;
 }
 .ml3-md{
     font-size: 10px;
-    line-height: 2.8;
-    margin-left: 20px;
+    line-height: 3;
+    margin-right: 20px;
 
    
 }
@@ -482,8 +497,257 @@ a {
 }
 .foot-wrapper button{
     font-family: inherit;
+    background-color: transparent;
 }
+.sub-footer-copyright {
+    vertical-align: baseline;
+    color: #7e7e7e;
+    line-height: 1!important;
+}
+.country-pin{
+    background: transparent;
+    vertical-align: baseline;
+    padding-left: 0;
+    color: #757575;
+    line-height: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    transition: color .35s ease;
+}
+.country-pin.nav-color-white .country-pin-label{
+    display: inline-block;
+    color: #fff;
+    margin: 0 30px 0 10px;
+    vertical-align: baseline;
+    font-size: 10pt;
+}
+.country-pin.nav-color-white path{
+    fill: #fff;
+}
+
+.foot-wrapper button {
+    font-family: inherit;
+}
+.sub-footer-menu-dropdown {
+    position: static;
+    border-top: 2px solid transparent;
+}
+.sub-footer-menu-dropdown .hf-dropdown-menu-box-container {
+    z-index: 3;
+    bottom: 32px;
+    right: 0;
+    top: inherit;
+    padding-bottom: 10px;
+    max-width: 100%;
+    min-width: 180px;
+    width: 95%
+}
+
+.hf-dropdown-menu-box-container {
+    background: transparent;
+    padding-top: 10px;
+    top: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 101;
+}
+
+.hf-dropdown-menu-box-container{
+    display: none;
+}
+
+.hf-dropdown-menu:hover>.hf-dropdown-menu-box-container{
+    display: block;
+   
+}
+
+
+
+.sub-footer-menu-dropdown .hf-dropdown-menu-box {
+    border: 1px solid #fff;
+    background: #111;
+    text-align: left;
+    transition: opacity .2s,visibility 0s linear .2s;
+    display: block;
+}
+
+
+
+.ncss-row{
+    display: block;
+}
+.ncss-col-sm-4{
+    float: left;
+    line-height: 1.6;
+    font-size: 14px;
+    width: 30%;
+    
+}
+
+.hf-dropdown-menu-box {
+    background: #fff;
+    min-width: 180px;
+    box-shadow: inset 0 0 0 0 #e5e5e5, inset -1px 0 0 0 #e5e5e5, inset 0 -1px 0 0 #e5e5e5, inset 1px 0 0 0 #e5e5e5;
+}
+
+
+.hf-dropdown-menu-box ul {
+    padding: 20px 28px;
+    width: 100%;
+    
+    
+}
+
+.ncss-row:after, .ncss-row:before {
+    content: "";
+    display: table;
+}
+.ncss-row:after {
+    clear: both;
+}
+
+.hf-dropdown-menu-box ul li:last-child{
+    margin-bottom: 0;
+}
+/* ----------------------------- */
+
+.main-header {
+    position: relative;
+    background: #f5f5f5;
+    width: 100%;
+}
+
+.pre-l-brand-header {
+    position: relative;
+    background: #f5f5f5;
+    height: 36px;
+    width: 100%;
+    z-index: 3;
+}
+
+.pre-l-wrapper{
+    display: flex;
+    opacity: 1;
+}
+.pre-desktop-usermenu{
+    display: flex;
+    position: absolute;
+    padding: 5px;
+    margin: auto;
+    right: 0;
+}
+
+.pre-brand-menu .pre-brand-item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.flx-dir-r{
+    display: flex;
+    margin: auto 4px;
+   
+}
+.pre-help-separator{
+    display: block;
+    margin: auto 8px;
+}
+
+
+.pre-help-dropdown .pre-dropdown-menu-box {
+    display: block;
+    position: absolute;
+    top: 36px;
+    background-color: #ccc;
+}
+
+.pre-dropdown-menu-box {
+    min-width: 240px;
+    right: 0;
+    top: 36px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity .2s,visibility 0s linear .2s,transform .25s ease;
+}
+/* .pre-help-dropdown .pre-help-button:hover >.pre-dropdown-menu-box {
+    opacity: 1;
+    visibility: visible;
+} */
+
+.pre-help-dropdown .pre-help-button,
+.pre-help-dropdown .pre-help-dropdown-menu-item:hover {
+    color: #111;
+}
+.pre-login-btns a, 
+.pre-login-btns button {
+    height: 34px;
+    color: #111;
+}
+.pre-login-btns{
+   /*  padding-right: 2px; */
+    margin: 3px 4px;
+}
+.pre-help-dropdown a, 
+.pre-help-dropdown button {
+    padding: 4px 8px;
+    color: #111;
+}
+
+.ml1-sm {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+#hf_title_joinus_membership,
+#hf_title_signin_membership,
+#hf_header_label_help,
+.body-4{
+    font-family: "Helvetica Neue",Helvetica,Arial,PingFang,"Microsoft YaHei","雅黑体",SimHei,sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.pre-help-dropdown a:hover,
+.pre-login-btns a:hover,
+.pre-login-btns button:hover {
+    color: #757575;
+}
+
+
+.pre-brand-item a, .pre-brand-item button,
+ .pre-btn-header a, .pre-btn-header button,
+  .pre-desktop-menu a, .pre-desktop-menu button,
+   button.nav-btn, button.pre-link {
+    background: transparent;
+}
+.pre-dropdown-menu-content {
+    background: #fff;
+    border-radius: 0 0 8px 8px;
+}
+.pl4-sm {
+    padding-left: 16px;
+}
+.p6-sm {
+    padding: 24px;
+}
+/*  */
+fieldset, h1, h2, h3, h4, h5, h6, label, legend, li, 
+p, span, strong, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}    
 button{
+    writing-mode: horizontal-tb !important;
     border:0;
     background-color:none;
     outline:none;
